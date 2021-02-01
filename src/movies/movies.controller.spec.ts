@@ -8,8 +8,8 @@ describe('MoviesController', () => {
     const module: TestingModule = await Test.createTestingModule({
       controllers: [MoviesController],
     }).compile();
-
     controller = module.get<MoviesController>(MoviesController);
+    console.log(controller);
   });
 
   it('should be defined', () => {
